@@ -1,0 +1,24 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"table2": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "DBO",
+			"table": {
+				"value": "@dataset().table2",
+				"type": "Expression"
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "SqlServerTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "",
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	}
+}

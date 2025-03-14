@@ -1,0 +1,9 @@
+{
+	"name": "yuvarajaadf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8b03e24f-5590-49aa-bae2-ebe6124a5d5c",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}

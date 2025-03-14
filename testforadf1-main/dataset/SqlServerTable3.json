@@ -1,0 +1,24 @@
+{
+	"name": "SqlServerTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer4",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"table1": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().table1",
+				"type": "Expression"
+			}
+		}
+	}
+}

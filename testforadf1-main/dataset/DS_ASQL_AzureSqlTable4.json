@@ -1,0 +1,25 @@
+{
+	"name": "DS_ASQL_AzureSqlTable4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseforrest",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "",
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
