@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: stagingfiles
+    schema: DBO
+    database: ASSESSMENT_1
+    tables:
+      - name: COUNTRY_REGION
+      - name: CUSTOMERS
+      - name: PRODUCTS
+      - name: TRANSACTIONS

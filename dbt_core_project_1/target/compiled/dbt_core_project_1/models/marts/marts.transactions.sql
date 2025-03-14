@@ -1,0 +1,1 @@
+select * from PROJECT.STAGING.stg_transactions

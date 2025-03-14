@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: stg_customers
+    description: "A starter dbt model FOR CUSTOMER"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        data_tests:
+          - not_null
+
+
+  - name: stg_products
+    description: "A starter dbt model FOR products"
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        data_tests:
+          - not_null
+    
+

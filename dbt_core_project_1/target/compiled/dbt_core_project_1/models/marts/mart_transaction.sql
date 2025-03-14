@@ -1,0 +1,1 @@
+select CUSTOMER_ID from PROJECT.staging.stg_transactions
